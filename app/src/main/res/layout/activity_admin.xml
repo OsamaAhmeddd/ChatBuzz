@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.Admin">
+
+    <EditText
+
+        android:id="@+id/nofication_message_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:background="@drawable/button_shape"
+        android:textColor="#fff"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Generate"
+        app:layout_constraintEnd_toEndOf="@+id/nofication_message_editText"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/nofication_message_editText"
+        app:layout_constraintTop_toBottomOf="@+id/nofication_message_editText" />
+
+    <Button
+
+        android:background="@drawable/button_shape"
+        android:textColor="#fff"
+        android:id="@+id/event_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="For create event click here!"
+        app:layout_constraintEnd_toEndOf="@+id/btnSend"
+        app:layout_constraintStart_toStartOf="@+id/btnSend"
+        app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Announcment"
+        android:textSize="26dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/nofication_message_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_confirmPassword"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:background="@drawable/button_shape"
+        android:textColor="#fff"
+        android:id="@+id/adve_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="for advertisment clcik here"
+        app:layout_constraintEnd_toEndOf="@+id/event_textview"
+        app:layout_constraintStart_toStartOf="@+id/event_textview"
+        app:layout_constraintTop_toBottomOf="@+id/event_textview" />
+
+    <Button
+        android:background="@drawable/button_shape"
+        android:textColor="#fff"
+        android:id="@+id/upl_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TO upload filee click here"
+        app:layout_constraintEnd_toEndOf="@+id/event_textview"
+        app:layout_constraintStart_toStartOf="@+id/event_textview"
+        app:layout_constraintTop_toBottomOf="@+id/adve_txt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

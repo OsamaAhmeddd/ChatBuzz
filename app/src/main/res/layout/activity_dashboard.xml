@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F7FFF"
+    tools:context=".Activities.Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="195dp"
+            android:layout_height="124dp"
+            android:src="@drawable/chatbzz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/chatbzz" />
+
+        <TextView
+            android:id="@+id/dashboard_welcomtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Welcome"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <Button
+            android:id="@+id/dashboard_SignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashboard_Events"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:text="Log Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/dashboard_Events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashboard_Chats"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="64dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_event_note_black_100dp"
+            android:text="Events"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_Chats" />
+
+        <ImageView
+            android:id="@+id/dashboard_Chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashboard_notifications"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="76dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_chat_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dashboard_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_notifications_none_black_128dp"
+            app:layout_constraintEnd_toStartOf="@+id/dashboard_Chats"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/mLost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="92dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_search_black_100dp"
+            android:text="Lost and Found"
+            app:layout_constraintEnd_toStartOf="@+id/dashboard_Events"
+            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_notifications" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="96dp"
+            android:text="Events"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_Events" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="16dp"
+            android:text="Notifications"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_notifications" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="88dp"
+            android:text="Chats"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_Chats" />
+
+        <ImageView
+            android:id="@+id/dashboard_admin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="56dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_admin_24dp"
+            android:text="Notification"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/dashboard_admin"
+            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mLost" />
+
+
+        <ImageView
+            android:id="@+id/dashboard_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_admin_24dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_Events"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_Events"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_Events"
+
+            />
+
+        <Button
+            android:id="@+id/navdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Nav"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/dashboard_SignOut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/dashboard_adminTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Faculty List"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_admin"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_admin"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_admin" />
+
+        <TextView
+            android:id="@+id/dashboard_adminTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notfication"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_admin2"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_admin2"
+
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_admin2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:text="Lost and Found"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mLost" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

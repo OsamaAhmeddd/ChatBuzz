@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zabih.chatBuzz.Activities.AddLost">
+
+    <ImageView
+        android:id="@+id/imggg"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/man" />
+
+    <EditText
+        android:id="@+id/lostName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imggg"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="end"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lostName"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="end"
+        android:hint="Description"
+
+        android:inputType="textMultiLine"
+
+        android:padding="10dp" />
+
+
+    <Spinner
+        android:id="@+id/addLost_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/addLost_spinner"
+        android:layout_centerInParent="true"
+        android:text="Upload" />
+
+</RelativeLayout>

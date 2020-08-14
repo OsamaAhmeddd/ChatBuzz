@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/chat_message_row_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/chat_message_row_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/chat_message_row_username"
+
+         />
+
+    <TextView
+        android:id="@+id/chat_message_row_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sadasd"
+        android:textSize="18sp"
+        android:layout_below="@+id/chat_message_row_image"
+        android:textColor="#fff"
+       />
+
+    <TextView
+        android:id="@+id/chat_message_row_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#fff"
+        android:layout_below="@+id/chat_message_row_message"
+      />
+
+
+</RelativeLayout>

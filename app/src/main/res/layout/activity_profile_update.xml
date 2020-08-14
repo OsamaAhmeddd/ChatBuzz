@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    android:padding="30dp"
+    tools:context=".Activities.ProfileUpdate">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/signUp_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="No Image"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/updateimg"
+
+        />
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/signUp_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_image"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:hint="Username"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/signUp_email"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_username"
+        android:layout_margin="10dp"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/cp"
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUp_email"
+        android:layout_margin="10dp"
+        android:textAllCaps="true"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+
+
+
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/np"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cp"
+        android:layout_margin="10dp"
+        android:textAllCaps="true"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/ccp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/np"
+        android:layout_margin="10dp"
+android:ems="10"
+        android:textAllCaps="true"
+        android:hint="Confirm-Password"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/signUp_submitBtn"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Update" />
+
+
+
+</RelativeLayout>

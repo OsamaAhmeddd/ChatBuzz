@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/ld"
+            android:icon="@drawable/ic_lost_black_24dp"
+            android:title="Lost and found" />
+
+        <item
+            android:id="@+id/Notification"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notification" />
+
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:title="Notification" />
+        </menu>
+    </item>-->
+
+</menu>

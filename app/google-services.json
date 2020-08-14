@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "793404042102",
+    "firebase_url": "https://smartapp-25b81.firebaseio.com",
+    "project_id": "smartapp-25b81",
+    "storage_bucket": "smartapp-25b81.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793404042102:android:d122bd61e81807846e2857",
+        "android_client_info": {
+          "package_name": "com.saim.cms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793404042102-sucmphh44iqj6kfe6qld2gld9s6r65a1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saim.cms",
+            "certificate_hash": "910fcbc1422ca880201d7b3a2477978ef9785161"
+          }
+        },
+        {
+          "client_id": "793404042102-2moi92bhh6ke8amsg1i9rkesles6i64v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaSth4BPfhZ4QbpSs6H7eOWpmWcisuLPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793404042102-2moi92bhh6ke8amsg1i9rkesles6i64v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
